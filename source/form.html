@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+
     <title>HTML Academy: ОТЗЫВ</title>
 </head>
 
@@ -13,17 +14,16 @@
         <nav class="main-nav">
             <div class="main-nav__wrapper">
                 <ul class="main-nav__list site-list">
-                    <li class="site-list__item">
-                        <a href="index.html">Главная</a>
-
+                    <li class="site-list__item gap-log1">
+                        <a  href="index.html">Главная</a>
                     </li>
-                    <li class="site-list__item">
-                        <a href="photo.html">Фото и видео</a>
+                    <li class="site-list__item gap-log2">
+                        <a  href="photo.html">Фото и видео</a>
                     </li>
-                    <li class="site-list__item">
-                        <a href="form.html">Форма отзыва</a>
+                    <li class="site-list__item gap-log3">
+                        <a  href="form.html">Форма отзыва</a>
                     </li>
-                    <li class="site-list__item">
+                    <li class="site-list__item gap-log4">
                         <a href="#">HTML Academy</a>
                     </li>
                 </ul>
@@ -39,8 +39,12 @@
                 </svg>
             </button>
         </nav>
-        <a href="index.html" class="page-header__logo">
-            <img src="./img/logotyle-mobile-svg.svg" alt="Логотип" width="102px" height="83px">
+        <a href="#" class="page-header__logo">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="./img/logo-sedona-desktop.svg">
+                <source media="(min-width: 768px)" srcset="./img/logo-sedona-tablet.svg">
+                  <img src="./img/logotyle-mobile-svg.svg" alt="Логотип" width="102px" height="83px" class="logo-desktop">
+              </picture>
         </a>
     </header>
     <main class="page-main">
@@ -54,66 +58,166 @@
             <p class="review__cause">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
         <form method="POST" action="https://echo.htmlacademy.ru">
+          <div class="nick-contacts">
             <section class="nickname">
-                <h2 class="nickname__info">Представтесь:</h2>
-                <p>Имя</p>
+                <h2 class="nickname__info">Представьтесь:</h2>
+                <div class="nickname__data">
+                <label for="privatenickname" class="subtitles"> Имя*:</label>
+                <input class="nick-call" type="text" pattern="^[A-Za-zА-Яа-яЁё]+$" name="login1" id="privatenickname" value="Петр">
+                </div>
+                <div class="nickname__data">
+                  <label for="privatsurname" class="subtitles"> Фамилия*:</label>
+                  <input class="surname" type="text" pattern="^[A-Za-zА-Яа-яЁё]+$" name="login2" id="privatsurname" value="Иванов">
+                </div>
+                <div class="nickname__data">
+                  <label for="patronymic" class="subtitles"> Отчество:</label>
+                  <input class="surname" type="text" pattern="^[A-Za-zА-Яа-яЁё]+$" name="login3" id="patronymic" value="Александрович">
+                </div>
+
             </section>
             <section class="contacts">
-                <h2 class="contacts__info">Контактная информация:</h2>
+              <div class="contacts__strip">
+                <div class="strip"></div>
+                <h2 class="contacts-info">Контактная информация:</h2>
+                <div class="strip"></div>
+              </div>
+                <div class="contact-number">
+                <label for="privatenumber" class="call-center"> <p><span class="contact-tel">Контактный</span> телефон*:</p>
+
+                <div class="icon-phone">
+                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 18 18" enable-background="new 0 0 18 18" xml:space="preserve">
+                  <g id="Page-1">
+                    <g id="Icons-Communication" transform="translate(-85.000000, -126.000000)">
+                      <g id="phone" transform="translate(85.000000, 126.000000)">
+                        <path id="Shape" fill="#010101" d="M3.6,7.8C5,10.6,7.4,12.9,10.2,14.4l2.2-2.2c0.3-0.3,0.699-0.4,1-0.2c1.1,0.4,2.3,0.6,3.6,0.6 c0.6,0,1,0.4,1,1V17c0,0.6-0.4,1-1,1C7.6,18,0,10.4,0,1c0-0.6,0.4-1,1-1h3.5c0.6,0,1,0.4,1,1c0,1.2,0.2,2.4,0.6,3.6 c0.1,0.3,0,0.7-0.2,1L3.6,7.8L3.6,7.8z"/>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              </label>
+              <input class="personal-number" type="tel"  pattern="[0-9]{5,10}"name="number" id="privatenumber" value="Введите телефон">
+              </div>
+              <div class="contact-number contact-privatemail">
+                <label for="privatemail" class="call-mail"> <p>Электронная почта*:</p>
+
+                <div class="icon-mail">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+                      <path d="M8,10c-0.266,0-0.5-0.094-1-0.336L0,6v7c0,0.55,0.45,1,1,1h14c0.55,0,1-0.45,1-1V6L9,9.664C8.5,9.906,8.266,10,8,10z M15,2 H1C0.45,2,0,2.45,0,3v0.758l8,4.205l8-4.205V3C16,2.45,15.55,2,15,2z"/>
+                    </svg>
+                    </div>
+                      </label>
+                      <input class="personal-number" type="email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" name="e-mail" id="privatemail" value="Введите e-mail">
+                    </div>
             </section>
+
             <section class="impression">
+
                 <h2 class="impression__info">ВАше Общее впечатление:</h2>
+                <div class="content">
+                <input type="checkbox" class="visually-hidden impression__info5" id="disgustingly" name="emotions5" checked>
+                        <label for="disgustingly" class="rather-positive">
+                        Скорее положительное
+                        </label>
+                      </div>
+                      <div class="content">
+                        <input type="checkbox" class="visually-hidden impression__info5" id="negative" name="emotions2" >
+                        <label for="negative" class="rather-positive">
+                          Скорее отрицательное
+                        </label>
+                      </div>
+                      <div class="content">
+                        <input type="checkbox" class="visually-hidden impression__info5" id="loss" name="emotions0" >
+                        <label for="loss" class="rather-positive">
+                          Затрудняюсь ответить
+                        </label>
+                      </div>
             </section>
+          </div>
             <section class="attractions">
-                <h2 class="attractions__info">посещенные достопримечательности:</h2>
+              <div class="attractions-strip">
+                <div class="strip"></div>
+                <h2 class="attractions-info">посещенные достопримечательности:</h2>
+                <div class="strip"></div>
+              </div>
+              <section class="attractions__content " >
+                <div class="attractions-sight">
+                <input type="checkbox" class="visually-hidden sight-assessment" id="sight-bridge1" name="sight1" checked>
+                <label for="sight-bridge1" class="beautiful">
+                  Мост Дьявола
+                </label>
+              </div>
+              <div class="attractions-sight">
+                <input type="checkbox" class="visually-hidden sight-assessment" id="sight-bridge2" name="sight2" checked>
+                <label for="sight-bridge2" class="beautiful">
+                  Гора-Колокол
+                </label>
+              </div>
+              <div class="attractions-sight devil-indent">
+                <input type="checkbox" class="visually-hidden sight-assessment" id="sight-bridge3" name="sight3" checked>
+                <label for="sight-bridge3" class="beautiful">
+                  Слайд-парк
+                </label>
+              </div>
+              <div class="attractions-sight cool-rocks">
+                <input type="checkbox" class="visually-hidden sight-assessment" id="sight-bridge4" name="sight4">
+                <label for="sight-bridge4" class="beautiful">
+                  Красные скалы
+                </label>
+              </div>
+           </section>
             </section>
             <section class="emotions">
+                <div class="emotions__cool">
+                <div class="strip"></div>
                 <h2 class="emotions-info">Опишите свои эмоции:</h2>
+                <div class="strip"></div>
+                </div>
+                <textarea class="emotions-comment" name="comment" id="comment-field" rows="20">Опишите подробно все свои восторги </textarea>
             </section>
-            <div class="comment">
-                ОТПРАВИТЬ ОТЗЫВ
+            <div class="send-comment">
+              <input type="submit" value="ОТПРАВИТЬ ОТЗЫВ">
+              <p class="star-open">* — обязательные поля</p>
             </div>
         </form>
     </main>
     <footer class="main-footer">
-        <div class="visitsedona">
-            <h2 class="visitsedona-title">#visitSEDONA</h2>
-        </div>
-        <ul class="social-button">
-            <li>
-                <a class="icon-back social-button__twitter" href="https://twitter.com/?lang=ru">
-                    <span class="visually-hidden">Твитер</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15">
-                        <path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z" />
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a class="icon-back social-button__facebook" href="https://www.facebook.com">
-                    <span class="visually-hidden">Фейсбук</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
-                        <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" />
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a class="icon-back social-button__youtube" href="https://www.youtube.com/">
-                    <span class="visually-hidden">Ютуб</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16">
-                        <path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z" />
-                    </svg>
-                </a>
-            </li>
-        </ul>
-        <div class="footer-copyright">
-            <b class="footer-copyright__title">Разработано</b>
-            <a class="footer-copyright__img" href="https://htmlacademy.ru/intensive/htmlcss">
-                <svg width="118" height="40" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 113 39">
-                    <path fill=" #black" d="M46.84 28.22a2.07 2.07 0 0 0 .58-.11v1.4a3.41 3.41 0 0 1-1.24.22 1.75 1.75 0 0 1-1.75-1 5.08 5.08 0 0 1-3.3 1.13c-1.59 0-3.06-.87-3.06-2.68 0-2.24 2.08-2.93 3.9-2.93a11.63 11.63 0 0 1 2.28.26v-.31c0-1.09-.8-1.86-2.3-1.86a7.79 7.79 0 0 0-3.15.67v-1.79a10.72 10.72 0 0 1 3.35-.58c2.48 0 4 1.18 4 3.83v3.14a.57.57 0 0 0 .69.61zm-6.76-1.19a1.42 1.42 0 0 0 1.64 1.29 3.56 3.56 0 0 0 2.53-1v-1.51a10.21 10.21 0 0 0-1.9-.22c-1.1.01-2.27.35-2.27 1.45zM53.06 20.62a5.29 5.29 0 0 1 2.7.67v1.79a4.28 4.28 0 0 0-2.42-.73 2.89 2.89 0 1 0 0 5.76 5.26 5.26 0 0 0 2.55-.67v1.8a6.58 6.58 0 0 1-2.9.6 4.42 4.42 0 0 1-4.72-4.54 4.54 4.54 0 0 1 4.79-4.68zM65.84 28.22a2.07 2.07 0 0 0 .58-.11v1.4a3.41 3.41 0 0 1-1.24.22 1.75 1.75 0 0 1-1.75-1 5.08 5.08 0 0 1-3.3 1.13c-1.59 0-3.06-.87-3.06-2.68 0-2.24 2.08-2.93 3.9-2.93a11.63 11.63 0 0 1 2.28.26v-.31c0-1.09-.8-1.86-2.3-1.86a7.79 7.79 0 0 0-3.15.67v-1.79a10.72 10.72 0 0 1 3.35-.58c2.48 0 4 1.18 4 3.83v3.14a.57.57 0 0 0 .69.61zm-6.76-1.19a1.42 1.42 0 0 0 1.64 1.29 3.56 3.56 0 0 0 2.53-1v-1.51a10.21 10.21 0 0 0-1.9-.22c-1.11.01-2.27.35-2.27 1.45zM76.67 16.85v12.76h-1.76v-1.39a4.07 4.07 0 0 1-3.35 1.62 4.62 4.62 0 0 1 0-9.22 4 4 0 0 1 3.15 1.37v-5.14h2zm-4.76 5.48a2.9 2.9 0 0 0 0 5.8 3 3 0 0 0 2.79-1.84v-2.13a3.06 3.06 0 0 0-2.79-1.83zM82.99 20.62c3.48 0 4.68 2.81 4.12 5.34h-6.58c.22 1.57 1.75 2.22 3.35 2.22a6.41 6.41 0 0 0 2.77-.62v1.68a7.5 7.5 0 0 1-3.14.6c-2.68 0-5-1.53-5-4.61a4.39 4.39 0 0 1 4.48-4.61zm.09 1.62a2.39 2.39 0 0 0-2.57 2.26h4.85a2.06 2.06 0 0 0-2.28-2.26zM89.1 29.61v-8.75h1.73v1.09a4 4 0 0 1 2.92-1.33 3 3 0 0 1 2.73 1.4 4.33 4.33 0 0 1 3.06-1.4 3.21 3.21 0 0 1 3.32 3.52v5.47h-2V24.2a1.67 1.67 0 0 0-1.73-1.84 2.94 2.94 0 0 0-2.17 1.18V29.61h-2V24.2a1.67 1.67 0 0 0-1.73-1.84 3.11 3.11 0 0 0-2.32 1.35v5.91h-2zM111.47 20.86h2l-4.1 9.93c-.95 2.28-2.19 3-3.52 3a5 5 0 0 1-1.15-.15v-1.66a3 3 0 0 0 .89.13c.95 0 1.66-.67 2.17-2l.18-.44-4.16-8.82h2.13l3 6.6zM40.66 1.53v5a4 4 0 0 1 2.83-1.2A3.41 3.41 0 0 1 47.1 8.9v5.41h-2V9.15a1.9 1.9 0 0 0-2-2.1 3.08 3.08 0 0 0-2.44 1.46v5.8h-2V1.53h2zM52.43 2.42v3.12h3.17v1.71h-3.17v4c0 1.15.53 1.53 1.66 1.53a4.71 4.71 0 0 0 1.77-.35v1.68a7.14 7.14 0 0 1-2.35.38 2.68 2.68 0 0 1-3-2.88V7.23h-1.6V5.52h1.57V2.88zM58.1 14.29V5.54h1.73v1.09a4 4 0 0 1 2.92-1.33 3 3 0 0 1 2.73 1.4 4.33 4.33 0 0 1 3.06-1.4 3.21 3.21 0 0 1 3.32 3.52v5.47h-2V8.88a1.67 1.67 0 0 0-1.73-1.84 2.94 2.94 0 0 0-2.17 1.18V14.29h-2V8.88a1.67 1.67 0 0 0-1.73-1.84 3.11 3.11 0 0 0-2.32 1.35v5.91h-2zM74.72 1.52h1.95v12.76h-1.95zM15.44.02h-.16L0 1.62v28l15.28 9.09 15.28-9.09v-28zm13.12 28.45l-13.28 7.9L2 28.47V16.99l13.22 7.87v1.43l-9.07-5.4v1.38l9.11 5.47v1.46l-9.1-5.42v1.38l9.11 5.47 9.19-5.5V19.22l4.1-2.45v11.67zm0-13.16l-3.65 2.14-1.68 1-8-4.76v1.38l6.84 4.07h-.06l-.15.09-1 .57-5.64-3.36v1.38l4.45 2.65-1.05.7-3.36-2v1.38l2.21 1.3-2.25 1.35-13.16-7.82 13.17-7.92zm0-1.39L15.21 6.05l-13.2 7.86V3.41l13.28-1.39 13.28 1.39v10.51z" />
-                </svg>
-            </a>
-        </div>
-    </footer>
+      <div class="visitsedona">
+          <h2 class="visitsedona-title">#visitSEDONA</h2>
+      </div>
+      <ul class="social-button">
+          <li>
+              <a class="icon-back social-button__twitter" href="https://twitter.com/?lang=ru">
+                  <span class="visually-hidden">Твитер</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15">
+                      <path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z" />
+                  </svg>
+              </a>
+          </li>
+          <li>
+              <a class="icon-back social-button__facebook" href="https://www.facebook.com">
+                  <span class="visually-hidden">Фейсбук</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
+                      <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" />
+                  </svg>
+              </a>
+          </li>
+          <li>
+              <a class="icon-back social-button__youtube" href="https://www.youtube.com/">
+                  <span class="visually-hidden">Ютуб</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16">
+                      <path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z" />
+                  </svg>
+              </a>
+          </li>
+      </ul>
+      <div class="footer-copyright">
+          <b class="footer-copyright__title">Разработано</b>
+          <a class="footer-copyright__img" href="https://htmlacademy.ru/intensive/htmlcss">
+              <img src="./img/htmlacademy-svg.svg" alt="Разработано" width="27px" height="34px">
+          </a>
+      </div>
+  </footer>
 </body>
 
 </html>
