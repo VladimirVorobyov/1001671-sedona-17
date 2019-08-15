@@ -29,13 +29,13 @@
                 </ul>
             </div>
             <button class="main-nav__end" type="button">
-                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" alt="Закрыть" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">
+                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"  width="22.199" height="22.199" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">
                     <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 " />
                 </svg>
             </button>
         </nav>
         <button class="page-header__toggle" type="button">
-            <svg xmlns="http://www.w3.org/2000/svg" alt="Открыть меню" width="22.928" height="21.982" version="1" viewBox="0 0 22.928 21.982">
+            <svg xmlns="http://www.w3.org/2000/svg"  width="22.928" height="21.982" version="1.0" viewBox="0 0 22.928 21.982">
                 <path d="M0 0h22.928v3.964H0zM0 9.009h22.928v3.964H0zM0 18.018h22.928v3.964H0z" />
             </svg>
         </button>
@@ -43,14 +43,14 @@
             <picture>
                 <source media="(min-width: 1200px)" srcset="./img/logo-sedona-desktop.svg">
                 <source media="(min-width: 768px)" srcset="./img/logo-sedona-tablet.svg">
-                  <img src="./img/logotyle-mobile-svg.svg" alt="Логотип" width="102px" height="83px" class="logo-desktop">
+                  <img src="./img/logotyle-mobile-svg.svg" alt="Логотип" width="102" height="83" class="logo-desktop">
               </picture>
         </a>
     </header>
     <main class="page-main">
         <section class="welcom-phote">
             <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-            <img src="img/sedona.svg" width="229px" height="39px" alt="Привет" class="welcom-phote__img2">
+            <img src="img/sedona.svg" width="229" height="39" alt="Привет" class="welcom-phote__img2">
 
         </section>
         <div class="review">
@@ -83,10 +83,8 @@
                     </div>
                     <div class="contact-number">
                         <label for="privatenumber" class="call-center">
-                            <p><span class="contact-tel">Контактный</span> телефон*:</p>
-
-                            <div class="icon-phone">
-                                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 18 18" enable-background="new 0 0 18 18" xml:space="preserve">
+                            <span class="contact-tel">Контактный</span> телефон*:
+                            <svg version="1.0" id="Layer_21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 18 18" enable-background="new 0 0 18 18" xml:space="preserve">
                                     <g id="Page-1">
                                         <g id="Icons-Communication" transform="translate(-85.000000, -126.000000)">
                                             <g id="phone" transform="translate(85.000000, 126.000000)">
@@ -94,20 +92,16 @@
                                             </g>
                                         </g>
                                     </g>
-                                </svg>
-                            </div>
+                            </svg>
                         </label>
                         <input class="personal-number" type="tel" pattern="[0-9]{5,10}" name="number" id="privatenumber" value="Введите телефон">
                     </div>
                     <div class="contact-number contact-privatemail">
                         <label for="privatemail" class="call-mail">
-                            <p>Электронная почта*:</p>
-
-                            <div class="icon-mail">
-                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+                            Электронная почта*:
+                                <svg version="1.1" id="Layer_31" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
                                     <path d="M8,10c-0.266,0-0.5-0.094-1-0.336L0,6v7c0,0.55,0.45,1,1,1h14c0.55,0,1-0.45,1-1V6L9,9.664C8.5,9.906,8.266,10,8,10z M15,2 H1C0.45,2,0,2.45,0,3v0.758l8,4.205l8-4.205V3C16,2.45,15.55,2,15,2z" />
                                 </svg>
-                            </div>
                         </label>
                         <input class="personal-number" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" name="e-mail" id="privatemail" value="Введите e-mail">
                     </div>
