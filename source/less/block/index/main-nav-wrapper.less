@@ -1,19 +1,125 @@
-.site-list{
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-}
-.site-list__item{
-  font-size: 18px;
-  font-weight: bold;
-  color: white;
-  box-shadow: 0px 1px 0 0 rgba(1, 1, 1, 0.2), inset 0px 1px 0 0 rgba(255, 255, 255, 0.2);
-  background-color: #81b3d2;
-  width: 320px;
-  padding-top: 20px;
-  padding-bottom: 14px;
+
+@media(min-width:320px) {
+	.site-list {
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+	}
+	.site-list__item {
+		font-size: 18px;
+		font-weight: bold;
+		color: white;
+		box-shadow: 0px 1px 0 0 rgba(1, 1, 1, 0.2), inset 0px 1px 0 0 rgba(255, 255, 255, 0.2);
+		background-color: #81b3d2;
+		width: auto;
+		padding-top: 20px;
+    padding-bottom: 14px;
+    &:hover {
+      background-color:  #669ec0;
+    }
+    &:active {
+      background-color: #5496bd;
+
+    }
   }
-  .site-list__item a{
-    color: white;
+	.site-list__item a {
+		color: white;
     text-decoration: none;
-  }
+    &:hover {
+      background-color:  #669ec0;
+    }
+    &:active {
+      background-color: #5496bd;
+      color:  rgba(255, 255, 255, 0.3);
+    }
+}
+}
+
+
+@media(min-width:768px) {
+	.main-nav__list {
+		display: flex;
+		width: 100%;
+	}
+	.site-list__item {
+		background-color: white;
+		box-shadow: none;
+		width: 20%;
+		margin: 0px;
+		padding: 0px;
+    padding-top: 15px;
+    color: black;
+    &:hover {
+      background-color: white;
+    }
+    &:active {
+      background-color: white;
+
+    }
+
+	}
+	.site-list__item a {
+		color: black;
+		font-size: 14px;
+    line-height: 26px;
+    &:hover {
+      background-color: white;
+      color: #81b3d2;
+      }
+
+      &:active {
+        background-color: white;
+      color: rgba(0, 0, 0, 0.3);
+      }
+	}
+	.gap-log1 {
+		margin-left: 2px;
+	}
+	.gap-log2 {
+		margin-left: 1px;
+	}
+	.gap-log3 {
+		margin-left: 155px;
+	}
+	.page-header__toggle {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		margin: -1px;
+		border: 0;
+		padding: 0;
+		white-space: nowrap;
+		-webkit-clip-path: inset(100%);
+		clip-path: inset(100%);
+		clip: rect(0 0 0 0);
+		overflow: hidden;
+	}
+	.main-nav__end {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		margin: -1px;
+		border: 0;
+		padding: 0;
+		white-space: nowrap;
+		-webkit-clip-path: inset(100%);
+		clip-path: inset(100%);
+		clip: rect(0 0 0 0);
+		overflow: hidden;
+	}
+}
+
+@media(min-width:1200px) {
+	.site-list__item {
+		width: 20%;
+	}
+	.gap-log1 {
+		margin-left: 1px;
+	}
+	.gap-log2 {
+		margin-left: 1px;
+	}
+	.gap-log3 {
+		margin-left: 245px;
+	}
+}

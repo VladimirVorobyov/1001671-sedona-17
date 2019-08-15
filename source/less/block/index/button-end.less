@@ -1,8 +1,23 @@
-.main-nav_end{
+.main-nav__end{
   position: absolute;
-  left: 250px;
+  left: 270px;
   top:15px;
-  background-color: #81b3d2;
+  background: none;
   border:none;
   fill: white;
+}
+@media(max-width:768px){
+  .main-nav__end{
+    position: absolute;
+		width: 1px;
+		height: 1px;
+		margin: -1px;
+		border: 0;
+		padding: 0;
+		white-space: nowrap;
+		-webkit-clip-path: inset(100%);
+		clip-path: inset(100%);
+		clip: rect(0 0 0 0);
+		overflow: hidden;
+}
 }
