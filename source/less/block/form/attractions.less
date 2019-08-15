@@ -1,0 +1,116 @@
+.attractions-info {
+	font-weight: 700;
+	line-height: 26px;
+	font-size: 18px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.beautiful {
+	position: relative;
+	padding-left: 25px;
+	margin-right: 0px;
+	text-align: left;
+	font-weight: 700;
+	line-height: 26px;
+	font-size: 18px;
+	text-transform: none;
+	margin-left: 72px;
+}
+
+.beautiful{
+  &::before{
+	content: '';
+	position: absolute;
+	left: -53px;
+	top: -12px;
+	width: 60px;
+	height: 60px;
+  background: url('../img/icon-baground-img .svg') no-repeat;
+  }
+  &:hover::before {
+    background: url('../img/icon-baground-img-hover.svg') no-repeat;
+  }
+  &:active::before {
+    background: url('../img/icon-baground-img-activ.svg') no-repeat;
+  }
+}
+
+.sight-assessment:checked+.beautiful {
+  &::before{
+	background: url('../img/icon-tick.svg'), url('../img/icon-baground-img .svg');
+	background-repeat: no-repeat;
+  background-position: center center;
+  }
+  &:hover::before {
+    background: url('../img/icon-tick.svg'),url('../img/icon-baground-img-hover.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    }
+  &:active::before {
+    background: url('../img/icon-tick-active.svg'),url('../img/icon-baground-img-activ.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    }
+  }
+
+.attractions-sight {
+	margin-bottom: 55px;
+	text-align: left;
+}
+
+.cool-rocks {
+	margin-top: -5px;
+}
+
+@media(min-width:768px) {
+	.strip {
+		width: 130px;
+		border-top: rgba(0, 0, 0, 0.1) solid 2px;
+	}
+	.attractions-info {
+		width: 278px;
+		font-weight: 700;
+		line-height: 26px;
+		font-size: 21px;
+		margin-right: 55px;
+		margin-left: 55px;
+		margin-top: -22px;
+	}
+	.attractions-strip {
+		display: flex;
+		margin-top: 57px;
+		margin-left: 60px;
+		margin-bottom: 23px;
+	}
+	.attractions__content {
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: 137px;
+	}
+	.attractions-sight {
+		margin-right: 54px;
+		margin-bottom: 65px;
+	}
+	.cool-rocks {
+		margin-left: 20px;
+		margin-top: 0px;
+	}
+}
+
+@media(min-width:1200px) {
+	.attractions {
+		margin-left: 60px;
+		margin-top: -5px;
+	}
+	.attractions-info {
+		margin-left: 65px;
+		margin-right: 60px;
+	}
+	.attractions__content {
+		margin-left: 40px;
+	}
+	.cool-rocks {
+		margin-left: 0px;
+	}
+}

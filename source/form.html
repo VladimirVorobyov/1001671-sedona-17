@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="./fonts/ptsans.woff2" as="font">
+    <title>HTML Academy: ОТЗЫВ</title>
+</head>
+
+<body>
+    <header class="page-header">
+        <nav class="main-nav">
+            <div class="main-nav__wrapper">
+                <ul class="main-nav__list site-list">
+                    <li class="site-list__item gap-log1">
+                        <a href="index.html">Главная</a>
+                    </li>
+                    <li class="site-list__item gap-log2">
+                        <a href="photo.html">Фото и видео</a>
+                    </li>
+                    <li class="site-list__item gap-log3">
+                        <a href="form.html">Форма отзыва</a>
+                    </li>
+                    <li class="site-list__item gap-log4">
+                        <a href="#">HTML Academy</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="main-nav__end" type="button">
+                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" alt="Закрыть" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">
+                    <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 " />
+                </svg>
+            </button>
+        </nav>
+        <button class="page-header__toggle" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" alt="Открыть меню" width="22.928" height="21.982" version="1" viewBox="0 0 22.928 21.982">
+                <path d="M0 0h22.928v3.964H0zM0 9.009h22.928v3.964H0zM0 18.018h22.928v3.964H0z" />
+            </svg>
+        </button>
+        <a href="index.html" class="page-header__logo">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="./img/logo-sedona-desktop.svg">
+                <source media="(min-width: 768px)" srcset="./img/logo-sedona-tablet.svg">
+                  <img src="./img/logotyle-mobile-svg.svg" alt="Логотип" width="102px" height="83px" class="logo-desktop">
+              </picture>
+        </a>
+    </header>
+    <main class="page-main">
+        <section class="welcom-phote">
+            <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
+            <img src="img/sedona.svg" width="229px" height="39px" alt="Привет" class="welcom-phote__img2">
+
+        </section>
+        <div class="review">
+            <h2 class="review__write">Оставьте свой отзыв</h2>
+            <p class="review__cause">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </div>
+        <form method="POST" action="https://echo.htmlacademy.ru">
+            <div class="nick-contacts">
+                <section class="nickname">
+                    <h2 class="nickname__info">Представьтесь:</h2>
+                    <div class="nickname__data">
+                        <label for="privatenickname" class="subtitles"> Имя*:</label>
+                        <input class="nick-call" type="text" pattern="^[A-Za-zА-Яа-яЁё]+$" name="login1" id="privatenickname" value="Петр">
+                    </div>
+                    <div class="nickname__data">
+                        <label for="privatsurname" class="subtitles"> Фамилия*:</label>
+                        <input class="surname" type="text" pattern="^[A-Za-zА-Яа-яЁё]+$" name="login2" id="privatsurname" value="Иванов">
+                    </div>
+                    <div class="nickname__data">
+                        <label for="patronymic" class="subtitles"> Отчество:</label>
+                        <input class="surname" type="text" pattern="^[A-Za-zА-Яа-яЁё]+$" name="login3" id="patronymic" value="Александрович">
+                    </div>
+
+                </section>
+                <section class="contacts">
+                    <div class="contacts__strip">
+                        <div class="strip"></div>
+                        <h2 class="contacts-info">Контактная информация:</h2>
+                        <div class="strip"></div>
+                    </div>
+                    <div class="contact-number">
+                        <label for="privatenumber" class="call-center">
+                            <p><span class="contact-tel">Контактный</span> телефон*:</p>
+
+                            <div class="icon-phone">
+                                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 18 18" enable-background="new 0 0 18 18" xml:space="preserve">
+                                    <g id="Page-1">
+                                        <g id="Icons-Communication" transform="translate(-85.000000, -126.000000)">
+                                            <g id="phone" transform="translate(85.000000, 126.000000)">
+                                                <path id="Shape" fill="#010101" d="M3.6,7.8C5,10.6,7.4,12.9,10.2,14.4l2.2-2.2c0.3-0.3,0.699-0.4,1-0.2c1.1,0.4,2.3,0.6,3.6,0.6 c0.6,0,1,0.4,1,1V17c0,0.6-0.4,1-1,1C7.6,18,0,10.4,0,1c0-0.6,0.4-1,1-1h3.5c0.6,0,1,0.4,1,1c0,1.2,0.2,2.4,0.6,3.6 c0.1,0.3,0,0.7-0.2,1L3.6,7.8L3.6,7.8z" />
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                        </label>
+                        <input class="personal-number" type="tel" pattern="[0-9]{5,10}" name="number" id="privatenumber" value="Введите телефон">
+                    </div>
+                    <div class="contact-number contact-privatemail">
+                        <label for="privatemail" class="call-mail">
+                            <p>Электронная почта*:</p>
+
+                            <div class="icon-mail">
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+                                    <path d="M8,10c-0.266,0-0.5-0.094-1-0.336L0,6v7c0,0.55,0.45,1,1,1h14c0.55,0,1-0.45,1-1V6L9,9.664C8.5,9.906,8.266,10,8,10z M15,2 H1C0.45,2,0,2.45,0,3v0.758l8,4.205l8-4.205V3C16,2.45,15.55,2,15,2z" />
+                                </svg>
+                            </div>
+                        </label>
+                        <input class="personal-number" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" name="e-mail" id="privatemail" value="Введите e-mail">
+                    </div>
+                </section>
+
+                <section class="impression">
+
+                    <h2 class="impression__info">ВАше Общее впечатление:</h2>
+                    <div class="content">
+                        <input type="checkbox" class="visually-hidden impression__info5" id="disgustingly" name="emotions" checked>
+                        <label for="disgustingly" class="rather-positive">
+                            Скорее положительное
+                        </label>
+                    </div>
+                    <div class="content">
+                        <input type="checkbox" class="visually-hidden impression__info5" id="negative" name="emotions">
+                        <label for="negative" class="rather-positive">
+                            Скорее отрицательное
+                        </label>
+                    </div>
+                    <div class="content">
+                        <input type="checkbox" class="visually-hidden impression__info5" id="loss" name="emotions">
+                        <label for="loss" class="rather-positive">
+                            Затрудняюсь ответить
+                        </label>
+                    </div>
+                </section>
+            </div>
+            <section class="attractions">
+                <div class="attractions-strip">
+                    <div class="strip"></div>
+                    <h2 class="attractions-info">посещенные достопримечательности:</h2>
+                    <div class="strip"></div>
+                </div>
+                <section class="attractions__content ">
+                    <div class="attractions-sight">
+                        <input type="checkbox" class="visually-hidden sight-assessment" id="sight-bridge1" name="sight1" checked>
+                        <label for="sight-bridge1" class="beautiful">
+                            Мост Дьявола
+                        </label>
+                    </div>
+                    <div class="attractions-sight">
+                        <input type="checkbox" class="visually-hidden sight-assessment" id="sight-bridge2" name="sight2" checked>
+                        <label for="sight-bridge2" class="beautiful">
+                            Гора-Колокол
+                        </label>
+                    </div>
+                    <div class="attractions-sight devil-indent">
+                        <input type="checkbox" class="visually-hidden sight-assessment" id="sight-bridge3" name="sight3" checked>
+                        <label for="sight-bridge3" class="beautiful">
+                            Слайд-парк
+                        </label>
+                    </div>
+                    <div class="attractions-sight cool-rocks">
+                        <input type="checkbox" class="visually-hidden sight-assessment" id="sight-bridge4" name="sight4">
+                        <label for="sight-bridge4" class="beautiful">
+                            Красные скалы
+                        </label>
+                    </div>
+                </section>
+            </section>
+            <section class="emotions">
+                <div class="emotions__cool">
+                    <div class="strip"></div>
+                    <h2 class="emotions-info">Опишите свои эмоции:</h2>
+                    <div class="strip"></div>
+                </div>
+                <textarea class="emotions-comment" name="comment" id="comment-field" rows="20" placeholder="Опишите подробно все свои восторги" ></textarea>
+            </section>
+            <div class="send-comment">
+                <input type="submit" value="ОТПРАВИТЬ ОТЗЫВ">
+                <p class="star-open">* — обязательные поля</p>
+            </div>
+        </form>
+    </main>
+    <footer class="main-footer">
+        <div class="visitsedona">
+            <h2 class="visitsedona-title">#visitSEDONA</h2>
+        </div>
+        <ul class="social-button">
+            <li>
+                <a class="icon-back social-button__twitter" href="https://twitter.com/?lang=ru">
+                    <span class="visually-hidden">Твитер</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15">
+                        <path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z" />
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a class="icon-back social-button__facebook" href="https://www.facebook.com">
+                    <span class="visually-hidden">Фейсбук</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
+                        <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" />
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a class="icon-back social-button__youtube" href="https://www.youtube.com/">
+                    <span class="visually-hidden">Ютуб</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16">
+                        <path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z" />
+                    </svg>
+                </a>
+            </li>
+        </ul>
+        <div class="footer-copyright">
+            <b class="footer-copyright__title">Разработано</b>
+            <a class="footer-copyright__img" href="https://htmlacademy.ru/intensive/adaptive">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09">
+                    <path  class="htmlacademy" d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z" />
+                </svg>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

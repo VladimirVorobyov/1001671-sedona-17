@@ -1,0 +1,90 @@
+.impression {
+	border-bottom: rgba(0, 0, 0, 0.1) solid 2px;
+}
+
+.impression__info {
+	margin-top: 17px;
+	font-weight: 700;
+	line-height: 26px;
+	font-size: 18px;
+	margin-left: 2px;
+	padding-bottom: 23px;
+}
+
+.rather-positive {
+	position: relative;
+	padding-left: 25px;
+	margin-right: 0px;
+	font-weight: 700;
+	line-height: 26px;
+	font-size: 18px;
+	text-transform: none;
+	margin-left: 33px;
+}
+
+.rather-positive{
+	&::before{
+    content: '';
+	position: absolute;
+	left: -49px;
+	top: -12px;
+	width: 50px;
+  height: 50px;
+  background: url('../img/checkbox-on.svg') no-repeat;
+  }
+  &:hover::before {
+    background: url('../img/checkbox-on-hover.svg') no-repeat;
+  }
+
+  &:active::before{
+    background: url('../img/checkbox-on-activ.svg') no-repeat;
+  }
+}
+
+.impression__info5:checked+.rather-positive {
+  &::before{
+  background: url('../img/checkbox-off.svg') no-repeat;
+  }
+  &:hover::before {
+    background: url('../img/checkbox-off-hover.svg') no-repeat;
+  }
+
+  &:active::before {
+    background: url('../img/checkbox-off-activ.svg') no-repeat;
+  }
+}
+
+.content {
+	margin-bottom: 42px;
+}
+
+@media(min-width:768px) {
+	.impression {
+		margin-left: 33px;
+		padding-right: 25px;
+		text-align: left;
+		border-bottom: none;
+	}
+	.impression__info {
+		font-size: 21px;
+		margin-top: -10px;
+		margin-left: 27px;
+	}
+	.content {
+		padding-top: 30px;
+		margin-left: 45px;
+		margin-bottom: 22px;
+	}
+}
+
+@media(min-width:1200px) {
+	.impression {
+		margin-top: 5px;
+		margin-left: 100px;
+		padding-right: 130px;
+	}
+	.impression__info {
+		margin-left: 99px;
+		margin-top: -7px;
+	}
+}
