@@ -1,207 +1,230 @@
 .contacts {
-	padding-bottom: 17px;
-	border-bottom: rgba(0, 0, 0, 0.1) solid 2px;
+  padding-bottom: 17px;
+  border-bottom: rgba(0, 0, 0, 0.1) solid 2px;
 }
 
 .contacts-info {
-	padding-top: 5px;
-	font-weight: 700;
-	line-height: 26px;
-	font-size: 18px;
-	padding-bottom: 8px;
+  padding-top: 5px;
+  font-weight: 700;
+  line-height: 26px;
+  font-size: 18px;
+  padding-bottom: 8px;
 }
 
 .personal-number {
-	background-color: #f2f2f2;
-	width: 255px;
-	height: 54px;
-	color: black;
-	line-height: 26px;
-	font-size: 16px;
-	font-weight: 700;
-	border: 2px solid #f2f2f2;
-	margin-left: 5px;
-	padding-left: 17px;
+  background-color: #f2f2f2;
+  width: 255px;
+  height: 54px;
+  color: black;
+  line-height: 26px;
+  font-size: 16px;
+  font-weight: 700;
+  border: 2px solid #f2f2f2;
+  margin-left: 5px;
+  padding-left: 17px;
   margin-top: 8px;
+
   &:hover {
     background: #e5e5e5;
   }
+
   &:active {
     background: #ffffff;
   }
 }
 
 .call-center {
-	position: relative;
-	margin-left: -75px;
+  position: relative;
+  margin-left: -75px;
 }
 
 .call-center p {
-	margin: 0px;
-	padding: 0px;
-	margin-left: -77px;
-	margin-top: -21px;
+  margin: 0;
+  padding: 0;
+  margin-left: -77px;
+  margin-top: -21px;
 }
 
 .call-mail {
-	position: relative;
-	margin-left: -87px;
+  position: relative;
+  margin-left: -87px;
 }
 
 .call-mail p {
-	margin: 0px;
-	padding: 0px;
-	margin-left: -87px;
-	margin-top: -20px;
+  margin: 0;
+  padding: 0;
+  margin-left: -87px;
+  margin-top: -20px;
 }
 
-.icon-phone {
-	position: absolute;
-	top: -21px;
-	left: 220px;
-	background-color: #e6e6e6;
-	padding: 19px;
-	padding-left: 22px;
-	padding-right: 20px;
-	padding-bottom: 16px;
+.call-center svg {
+  position: absolute;
+  top: 28px;
+  left: 200px;
+  background-color: #e6e6e6;
+  padding: 20px;
+  padding-left: 22px;
+  padding-right: 20px;
+  padding-bottom: 21px;
 }
 
-.icon-mail {
-	position: absolute;
-	top: -20px;
-	left: 222px;
-	background-color: #e6e6e6;
-	padding: 22px;
-	padding-left: 21px;
-	padding-right: 21px;
-	padding-bottom: 16px;
+.call-mail svg {
+  position: absolute;
+  top: -20px;
+  left: 222px;
+  background-color: #e6e6e6;
+  padding: 22px;
+  padding-left: 21px;
+  padding-right: 21px;
+  padding-bottom: 22px;
 }
 
 .contact-number {
-	margin-bottom: 12px;
+  margin-bottom: 12px;
 }
 
-@media(min-width:768px) {
-	.contacts-info {
-		font-weight: 700;
-		line-height: 26px;
-		font-size: 21px;
-		margin-left: 54px;
-		margin-right: 62px;
-		margin-top: -18px;
-	}
-	.strip {
-		width: 130px;
-		border-top: rgba(0, 0, 0, 0.1) solid 2px;
-	}
-	.contacts__strip {
-		display: flex;
-		margin-top: 57px;
-		margin-left: 60px;
-	}
-	.personal-number {
-		display: flex;
-		flex-wrap: wrap;
-		width: 625px;
-		text-align: left;
-	}
-	.call-center {
-		display: block;
-		text-align: left;
-		margin-top: 0px;
-		margin-left: 25px;
-	}
-	.contact-number {
-		margin-bottom: 0px;
-		margin-top: 22px;
-		margin-left: 30px;
-	}
-	.call-mail {
-		display: block;
-		text-align: left;
-		padding-top: 25px;
-		margin-left: 25px;
-	}
-	.call-center p {
-		padding-left: 104px;
-	}
-	.call-mail p {
-		padding-left: 114px;
-	}
-	.icon-phone {
-		position: absolute;
-		top: 29px;
-		left: 595px;
-	}
-	.icon-mail {
-		position: absolute;
-		top: 34px;
-		left: 595px;
-	}
-	.contacts {
-		border-bottom: none;
-	}
+@media (min-width: 768px) {
+  .contacts-info {
+    font-weight: 700;
+    line-height: 26px;
+    font-size: 21px;
+    margin-left: 54px;
+    margin-right: 62px;
+    margin-top: -18px;
+  }
+
+  .strip {
+    width: 130px;
+    border-top: rgba(0, 0, 0, 0.1) solid 2px;
+  }
+
+  .contacts__strip {
+    display: flex;
+    margin-top: 57px;
+    margin-left: 60px;
+  }
+
+  .personal-number {
+    display: flex;
+    flex-wrap: wrap;
+    width: 625px;
+    text-align: left;
+  }
+
+  .call-center {
+    display: block;
+    text-align: left;
+    margin-top: 0;
+    margin-left: 25px;
+  }
+
+  .contact-number {
+    margin-bottom: 0;
+    margin-top: 22px;
+    margin-left: 30px;
+  }
+
+  .call-mail {
+    display: block;
+    text-align: left;
+    padding-top: 25px;
+    margin-left: 25px;
+  }
+
+  .call-center p {
+    padding-left: 104px;
+  }
+
+  .call-mail p {
+    padding-left: 114px;
+  }
+
+  .call-center svg {
+    position: absolute;
+    top: 29px;
+    left: 595px;
+  }
+
+  .call-mail svg {
+    position: absolute;
+    top: 34px;
+    left: 595px;
+  }
+
+  .contacts {
+    border-bottom: none;
+  }
 }
 
-@media(min-width:1200px) {
-	.contacts {
-		margin-left: 60px;
-		display: flex;
-		flex-wrap: wrap;
-	}
-	.contacts-info {
-		min-width: 280px;
-		margin-left: 63px;
-	}
-	.contacts__strip {
-		min-width: 1000px;
-	}
-	.strip {
-		padding-left: 147px;
-	}
-	.personal-number {
-		width: 295px;
-		margin-top: -40px;
-		margin-left: 10px;
-	}
-	.contact-tel {
-		position: absolute;
-		width: 1px;
-		height: 1px;
-		margin: -1px;
-		border: 0;
-		padding: 0;
-		white-space: nowrap;
-		-webkit-clip-path: inset(100%);
-		clip-path: inset(100%);
-		clip: rect(0 0 0 0);
-		overflow: hidden;
-	}
-	.contact-number {
-		display: flex;
-		margin-top: 88px;
-		margin-left: 110px;
-	}
-	.call-center p {
-		padding-left: 0px;
-	}
-	.call-mail p {
-		display: block;
-		padding-left: 114px;
-		margin-top: -45px;
-		margin-right: 10px;
-	}
-	.icon-phone {
-		position: absolute;
-		top: -40px;
-		left: 265px;
-	}
-	.icon-mail {
-		position: absolute;
-		top: -40px;
-		left: 450px;
-	}
-	.contact-privatemail {
-		margin-left: 27px;
-	}
+@media (min-width: 1200px) {
+  .contacts {
+    margin-left: 60px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contacts-info {
+    min-width: 280px;
+    margin-left: 63px;
+  }
+
+  .contacts__strip {
+    min-width: 1000px;
+  }
+
+  .strip {
+    padding-left: 147px;
+  }
+
+  .personal-number {
+    width: 295px;
+    margin-top: -40px;
+    margin-left: 10px;
+  }
+
+  .contact-tel {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .contact-number {
+    display: flex;
+    margin-top: 88px;
+    margin-left: 40px;
+  }
+
+  .call-center p {
+    padding-left: 0;
+  }
+
+  .call-mail p {
+    display: block;
+    padding-left: 114px;
+    margin-top: -45px;
+    margin-right: 10px;
+  }
+
+  .call-center svg {
+    position: absolute;
+    top: -40px;
+    left: 334px;
+  }
+
+  .call-mail svg {
+    position: absolute;
+    top: -40px;
+    left: 450px;
+  }
+
+  .contact-privatemail {
+    margin-left: 27px;
+  }
 }
