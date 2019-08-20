@@ -1,117 +1,131 @@
 .nickname__data {
-	display: flex;
-	margin-bottom: 20px;
+  display: flex;
+  margin-bottom: 20px;
 }
 
 .nick-call {
-	background-color: #f2f2f2;
-	width: 205px;
-	height: 54px;
-	color: black;
-	line-height: 26px;
-	font-size: 16px;
-	font-weight: 700;
-	border: 2px solid #f2f2f2;
-	margin: 0;
+  background-color: #f2f2f2;
+  width: 205px;
+  height: 54px;
+  color: black;
+  line-height: 26px;
+  font-size: 16px;
+  font-weight: 700;
+  border: 2px solid #f2f2f2;
+  margin: 0;
   padding-left: 20px;
+
   &:hover {
     background: #e5e5e5;
   }
+
   &:active {
     background: #ffffff;
   }
 }
 
 .surname {
-	background-color: #f2f2f2;
-	width: 170px;
-	height: 54px;
-	color: black;
-	line-height: 26px;
-	font-size: 16px;
-	font-weight: 700;
-	border: 2px solid #f2f2f2;
-	margin: 0;
+  background-color: #f2f2f2;
+  width: 170px;
+  height: 54px;
+  color: black;
+  line-height: 26px;
+  font-size: 16px;
+  font-weight: 700;
+  border: 2px solid #f2f2f2;
+  margin: 0;
   padding-left: 20px;
+
   &:hover {
     background: #e5e5e5;
   }
+
   &:active {
     background: #ffffff;
   }
 }
 
 .nickname__info {
-	font-weight: 700;
-	line-height: 26px;
-	font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  font-size: 18px;
 }
 
 .subtitles {
-	margin-left: 20px;
-	padding-top: 20px;
-	margin-right: 15px;
+  margin-left: 20px;
+  padding-top: 20px;
+  margin-right: 15px;
 }
 
 .nickname {
-	border-bottom: rgba(0, 0, 0, 0.1) solid 2px;
+  border-bottom: rgba(0, 0, 0, 0.1) solid 2px;
 }
 
-@media(min-width:768px) {
-	.nick-contacts {
-		display: flex;
-		flex-wrap: wrap;
-	}
-	.impression {
-		order: 1;
-		min-width: 323px;
-		border-right: rgba(0, 0, 0, 0.1) solid 2px;
-		margin-top: 20px;
-	}
-	.nickname {
-		order: 2;
-		width: 273px;
-		margin-top: -10px;
-		border-bottom: none;
-	}
-	.contacts {
-		min-width: 500px;
-		order: 3;
-	}
-	.nickname__info {
-		font-weight: 700;
-		line-height: 26px;
-		font-size: 21px;
-		margin-left: 4px;
-		padding-bottom: 36px;
-	}
-	.nickname__data {
-		margin-top: 20px;
-		margin-left: 38px;
-		padding-bottom: 0px;
-	}
-	.nick-call {
-		width: 190px;
-	}
-	.surname {
-		width: 155px;
-	}
+@media (min-width: 768px) {
+  .nick-contacts {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .impression {
+    order: 1;
+    min-width: 323px;
+    border-right: rgba(0, 0, 0, 0.1) solid 2px;
+    margin-top: 20px;
+  }
+
+  .nickname {
+    order: 2;
+    width: 273px;
+    margin-top: -10px;
+    border-bottom: none;
+  }
+
+  .contacts {
+    min-width: 500px;
+    order: 3;
+  }
+
+  .nickname__info {
+    font-weight: 700;
+    line-height: 26px;
+    font-size: 21px;
+    margin-left: 4px;
+    padding-bottom: 36px;
+  }
+
+  .nickname__data {
+    margin-top: 20px;
+    margin-left: 38px;
+    padding-bottom: 0;
+  }
+
+  .nick-call {
+    width: 190px;
+  }
+
+  .surname {
+    width: 155px;
+  }
 }
 
-@media(min-width:1200px) {
-	.nickname {
-		min-width: 500px;
-		margin-left: 18px;
-		margin-top: -20px;
-	}
-	.nick-call {
-		width: 325px;
-	}
-	.surname {
-		width: 288px;
-	}
-	.nickname__info {
-		text-align: left;
-		margin-left: 60px;
-	}
+@media (min-width: 1200px) {
+  .nickname {
+    min-width: 500px;
+    margin-left: 18px;
+    margin-top: -20px;
+  }
+
+  .nick-call {
+    width: 325px;
+  }
+
+  .surname {
+    width: 288px;
+  }
+
+  .nickname__info {
+    text-align: left;
+    margin-left: 60px;
+  }
 }
