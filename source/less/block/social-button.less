@@ -1,5 +1,6 @@
 .icon-back {
   background: #81b3d2;
+  border-color: #81b3d2;
 
   &:hover {
     background-color: #669ec0;
@@ -14,46 +15,49 @@
 
 .social-button {
   display: flex;
-  margin-top: 53px;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  margin-left: 45px;
+  margin-bottom: 40px;
   list-style: none;
 }
 
+.icon-back svg {
+  padding: auto;
+  margin: auto;
+}
+
 .social-button__twitter {
-  padding-right: 15px;
-  padding-bottom: 15px;
-  padding-top: 14px;
-  padding-left: 17px;
-  margin-right: 5px;
-  margin-left: 43px;
+  display: flex;
+  width: 46px;
+  height: 48px;
+  margin-right: 6px;
 }
 
 .social-button__facebook {
-  padding-right: 15px;
-  padding-bottom: 8px;
-  padding-top: 22px;
-  padding-left: 17px;
-  margin-right: 8px;
+  display: flex;
+  width: 46px;
+  height: 48px;
+  margin-right: 6px;
 }
 
 .social-button__youtube {
-  padding-right: 14px;
-  padding-bottom: 13px;
-  padding-top: 15px;
-  padding-left: 12px;
+  display: flex;
+  width: 46px;
+  height: 48px;
   margin-right: 6px;
 }
 
 @media (min-width: 768px) {
   .social-button {
-    margin-top: 43px;
-    margin-left: 27px;
+    margin-top: 30px;
+    margin-left: 70px;
   }
 }
 
 @media (min-width: 1200px) {
   .social-button {
-    margin-top: 43px;
-    margin-left: 185px;
+    margin-top: 30px;
+    margin-left: 230px;
   }
 }
